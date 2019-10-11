@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 import { TestsComponent } from './tests.component';
-import { TestInputsComponent } from './test-inputs/test-inputs.component';
+import { TestCreateComponent } from './test-create/test-create.component';
 import { TestLayoutsComponent } from './test-layouts/test-layouts.component';
 import { DatepickerComponent } from './datepicker/datepicker.component';
 import { ButtonsComponent } from './buttons/buttons.component';
@@ -13,15 +13,11 @@ const routes: Routes = [
     component: TestsComponent,
     children: [
       {
-        path: 'creating',
-        component: TestInputsComponent,
+        path: 'create',
+        component: TestCreateComponent,
       },
       {
-        path: 'layouts',
-        component: TestLayoutsComponent,
-      },
-      {
-        path: 'layouts',
+        path: 'created',
         component: TestLayoutsComponent,
       },
       {

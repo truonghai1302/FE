@@ -14,7 +14,7 @@ import {
 import { ThemeModule } from '../../@theme/theme.module';
 import { TestsRoutingModule } from './tests-routing.module';
 import { TestsComponent } from './tests.component';
-import { TestInputsComponent } from './test-inputs/test-inputs.component';
+import { TestCreateComponent } from './test-create/test-create.component';
 import { TestLayoutsComponent } from './test-layouts/test-layouts.component';
 import { DatepickerComponent } from './datepicker/datepicker.component';
 import { ButtonsComponent } from './buttons/buttons.component';
@@ -39,7 +39,7 @@ import { FormsModule as ngFormsModule } from '@angular/forms';
   declarations: [
     TestsComponent,
     ButtonsComponent,
-    TestInputsComponent,
+    TestCreateComponent,
     TestLayoutsComponent,
     DatepickerComponent,
   ],

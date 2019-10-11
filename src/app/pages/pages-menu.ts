@@ -71,11 +71,11 @@ export const MENU_ITEMS: NbMenuItem[] = [
     children: [
       {
         title: 'Creating New',
-        link: '/pages/tests/creating',
+        link: '/pages/tests/create',
       },
       {
-        title: 'Form Layouts',
-        link: '/pages/tests/layouts',
+        title: 'Manage Created Test',
+        link: '/pages/tests/created',
       },
       {
         title: 'Buttons',
