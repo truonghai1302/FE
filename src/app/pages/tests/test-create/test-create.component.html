@@ -5,11 +5,14 @@
       <label for="name">Name</label>
       <input type="text" nbInput fullWidth placeholder="Enter test name">
       <label for="description">Description</label>
-      <textarea rows="5" nbInput fullWidth shape="round"  placeholder="Enter test description"></textarea>
+      <textarea rows="5" nbInput fullWidth shape="round" placeholder="Enter test description"></textarea>
       <label for="time">Time</label>
       <input type="number" nbInput fullWidth placeholder="Enter time">
       <label for="tags">Tags</label>
-      <input type="text" nbInput fullWidth placeholder="Enter tags" value aria-autocomplete="list">
+      <tag-input [ngModel]='items' [maxItems]='5' [onlyFromAutocomplete]="true">
+        <tag-input-dropdown [showDropdownIfEmpty]="true" [autocompleteItems]="['Java','Angular','MySQL']">
+        </tag-input-dropdown>
+      </tag-input>
       <button class="col-12" type="submit" nbButton status="danger">Submit</button>
     </nb-card-body>
   </nb-card>

@@ -6,7 +6,6 @@ import { Component } from '@angular/core';
   templateUrl: './test-create.component.html',
 })
 export class TestCreateComponent {
-
   starRate = 2;
   heartRate = 4;
   radioGroupValue = 'This is value 2';

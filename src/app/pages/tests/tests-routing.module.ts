@@ -3,7 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 
 import { TestsComponent } from './tests.component';
 import { TestCreateComponent } from './test-create/test-create.component';
-import { TestLayoutsComponent } from './test-layouts/test-layouts.component';
+import { TestCreatedComponent } from './test-created/test-created.component';
 import { DatepickerComponent } from './datepicker/datepicker.component';
 import { ButtonsComponent } from './buttons/buttons.component';
 
@@ -18,7 +18,7 @@ const routes: Routes = [
       },
       {
         path: 'created',
-        component: TestLayoutsComponent,
+        component: TestCreatedComponent,
       },
       {
         path: 'buttons',
