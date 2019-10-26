@@ -44,6 +44,16 @@ export const MENU_ITEMS: NbMenuItem[] = [
     ],
   },
   {
+    title: 'Quản Lý',
+    icon: 'layout-outline',
+    children: [
+      {
+        title: 'Topic',
+        link: '/pages/manage/topic',
+      },
+    ],
+  },
+  {
     title: 'Forms',
     icon: 'edit-2-outline',
     children: [

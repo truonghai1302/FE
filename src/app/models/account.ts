@@ -1,5 +1,7 @@
+import { AccountType } from './accounttype';
+
 export class Account {
-    id: number;
-    username: string;
-    email: string;
+    accountid: number;
+    password: number;
+    accounttype: AccountType;
 }

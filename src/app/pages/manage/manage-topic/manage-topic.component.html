@@ -1,0 +1,68 @@
+<header id="main-header" class="py-2 bg-warning text-white">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <h1>
+          <i class="fas fa-users"></i> Topic</h1>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- SEARCH -->
+<section id="search" class="py-4 mb-4 bg-light">
+  <div class="container">
+    <div class="row">
+      <button type="button" class="btn btn-dark col">
+        <a routerLink="add"  routerLinkActive="active">Add Topic</a>
+      </button>
+      <div class="col-md-6 ml-auto">
+        <div class="input-group">
+          <input type="text" class="form-control" placeholder="Search Topic...">
+          <div class="input-group-append">
+            <button class="btn btn-warning">Search</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- USERS -->
+<section id="users">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <div class="card">
+          <div class="card-header">
+            <h4>TOPIC LIST</h4>
+          </div>
+          <table class="table table-striped">
+            <thead class="thead-dark">
+              <tr>
+                <th>#</th>
+                <th>ID</th>
+                <th>Name</th>
+                <th></th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let topic of topics | async, let i = index">
+                <td>{{i+1}}</td>
+                <td>{{topic.topicid}}</td>
+                <td>{{topic.topicName}}</td>
+                <td><button (click)="deleteTopic(topic.topicid)" class="btn btn-danger">Delete</button>
+                  <!-- <button (click)="topicDetails(topic.id)" class="btn btn-info"
+                    style="margin-left: 10px">Details</button> -->
+                </td>
+                <td></td>
+              </tr>
+            </tbody>
+           
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
