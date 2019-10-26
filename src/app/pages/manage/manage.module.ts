@@ -17,10 +17,11 @@ import { ManageComponent } from './manage.component';
 import { FormsModule as ngFormsModule } from '@angular/forms';
 import { ManageTopicComponent } from './manage-topic/manage-topic.component';
 import { ManageQuestionComponent } from './manage-question/manage-question.component';
-import { ManageAnswerComponent } from './manage-answer/manage-answer.component';
 import { CreateTopicComponent } from './manage-topic/create-topic/create-topic.component';
 import { ManageTestComponent } from './manage-test/manage-test.component';
 import { AddTestComponent } from './manage-test/add-test/add-test.component';
+import { AddQuestionComponent } from './manage-question/add-question/add-question.component';
+
 
 @NgModule({
   imports: [
@@ -43,10 +44,10 @@ import { AddTestComponent } from './manage-test/add-test/add-test.component';
     ManageComponent,
     ManageTopicComponent,
     ManageQuestionComponent,
-    ManageAnswerComponent,
     CreateTopicComponent,
     ManageTestComponent,
     AddTestComponent,
+    AddQuestionComponent,
   ],
 })
 export class ManageModule { }

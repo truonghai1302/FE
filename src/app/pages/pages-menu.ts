@@ -51,6 +51,10 @@ export const MENU_ITEMS: NbMenuItem[] = [
         title: 'Topic',
         link: '/pages/manage/topic',
       },
+      {
+        title: 'Ngân Hàng Câu Hỏi',
+        link: '/pages/manage/question',
+      },
     ],
   },
   {

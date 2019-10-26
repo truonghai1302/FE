@@ -3,6 +3,8 @@ import { RouterModule, Routes } from '@angular/router';
 import { ManageTopicComponent } from './manage-topic/manage-topic.component';
 import { CreateTopicComponent } from './manage-topic/create-topic/create-topic.component';
 import { ManageComponent } from './manage.component';
+import { ManageQuestionComponent } from './manage-question/manage-question.component';
+import { AddQuestionComponent } from './manage-question/add-question/add-question.component';
 
 const routes: Routes = [
   {
@@ -16,6 +18,14 @@ const routes: Routes = [
       {
         path: 'topic/add',
         component: CreateTopicComponent,
+      },
+      {
+        path: 'question',
+        component: ManageQuestionComponent,
+      },
+      {
+        path: 'question/add',
+        component: AddQuestionComponent,
       },
     ],
   },
