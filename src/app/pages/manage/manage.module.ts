@@ -20,6 +20,7 @@ import { ManageQuestionComponent } from './manage-question/manage-question.compo
 import { ManageAnswerComponent } from './manage-answer/manage-answer.component';
 import { CreateTopicComponent } from './manage-topic/create-topic/create-topic.component';
 import { ManageTestComponent } from './manage-test/manage-test.component';
+import { AddTestComponent } from './manage-test/add-test/add-test.component';
 
 @NgModule({
   imports: [
@@ -45,6 +46,7 @@ import { ManageTestComponent } from './manage-test/manage-test.component';
     ManageAnswerComponent,
     CreateTopicComponent,
     ManageTestComponent,
+    AddTestComponent,
   ],
 })
 export class ManageModule { }
